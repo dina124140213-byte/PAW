@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kantin ITERA - Beranda</title>
+
+  <style>
+    /* CSS untuk website Kantin ITERA */
+    /* dibuat sederhana, jadi CSS-nya juga saya buat dasar saja */
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdf8ee;
+      color: #333333;
+      line-height: 1.6;
+    }
+
+    /* -------- Header -------- */
+
+    header {
+      background-color: #3b5d3b;
+      color: white;
+      padding: 15px 20px;
+    }
+
+    header .site-title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    /* -------- Navigasi -------- */
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* -------- Isi Utama -------- */
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #cccccc;
+    }
+
+    h1 {
+      color: #3b5d3b;
+    }
+
+    h2 {
+      color: #3b5d3b;
+    }
+
+    h3 {
+      color: #b5842f;
+    }
+
+    /* -------- Tabel Menu -------- */
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    table caption {
+      text-align: left;
+      margin-bottom: 8px;
+      font-style: italic;
+    }
+
+    table th, table td {
+      border: 1px solid #999999;
+      padding: 8px;
+      text-align: left;
+    }
+
+    table th {
+      background-color: #d9a441;
+      color: #333333;
+    }
+
+    table tr:nth-child(even) {
+      background-color: #f0ead8;
+    }
+
+    /* -------- Kartu Fasilitas -------- */
+
+    .card {
+      background-color: #f0ead8;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-left: 4px solid #b5842f;
+    }
+
+    /* -------- Berita -------- */
+
+    .berita-singkat {
+      background-color: #f0ead8;
+      padding: 15px;
+      border-left: 4px solid #a33c30;
+    }
+
+    /* -------- Aside / Info Lokasi -------- */
+
+    aside {
+      background-color: #3b5d3b;
+      color: white;
+      padding: 20px;
+    }
+
+    aside h2 {
+      color: white;
+    }
+
+    /* -------- Footer -------- */
+
+    footer {
+      background-color: #333333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header berisi judul website dan menu navigasi -->
+  <header>
+    <p class="site-title">Kantin ITERA</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#fasilitas">Fasilitas</a></li>
+        <li><a href="berita.html">Berita</a></li>
+        <li><a href="#lokasi">Lokasi</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Konten utama halaman -->
+  <main>
+
+    <section id="tentang">
+      <h1>Selamat Datang di Kantin ITERA</h1>
+      <p>Kantin ITERA adalah tempat makan utama mahasiswa di kampus Institut Teknologi Sumatera. Di sini mahasiswa bisa makan, istirahat sebentar, atau mengerjakan tugas sambil menunggu jam kuliah berikutnya.</p>
+    </section>
+
+    <section id="menu">
+      <h2>Menu Hari Ini</h2>
+      <p>Berikut daftar menu dan harga yang tersedia hari ini di Kantin ITERA.</p>
+
+      <table>
+        <caption>Daftar menu dan harga Kantin ITERA</caption>
+        <thead>
+          <tr>
+            <th>Menu</th>
+            <th>Kategori</th>
+            <th>Harga</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Nasi Goreng Kampus</td>
+            <td>Makanan Berat</td>
+            <td>Rp 12.000</td>
+          </tr>
+          <tr>
+            <td>Mie Ayam Bakso</td>
+            <td>Makanan Berat</td>
+            <td>Rp 13.000</td>
+          </tr>
+          <tr>
+            <td>Ayam Geprek + Nasi</td>
+            <td>Makanan Berat</td>
+            <td>Rp 14.000</td>
+          </tr>
+          <tr>
+            <td>Pisang Goreng</td>
+            <td>Camilan</td>
+            <td>Rp 8.000</td>
+          </tr>
+          <tr>
+            <td>Es Teh Manis</td>
+            <td>Minuman</td>
+            <td>Rp 3.000</td>
+          </tr>
+          <tr>
+            <td>Es Jeruk</td>
+            <td>Minuman</td>
+            <td>Rp 5.000</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Tips Hemat</h3>
+      <p>Kalau mau lebih hemat, beli nasi, satu lauk, dan es teh biasanya total sekitar Rp 15.000 saja.</p>
+    </section>
+
+    <section id="fasilitas">
+      <h2>Fasilitas Kantin</h2>
+      <p>Selain tempat makan, kantin ini juga punya beberapa fasilitas berikut.</p>
+
+      <div class="card">
+        <h3>Area Makan Indoor</h3>
+        <p>Bisa menampung sekitar 120 orang, cocok untuk makan bersama teman satu kelas.</p>
+      </div>
+
+      <div class="card">
+        <h3>Colokan dan Wi-Fi</h3>
+        <p>Tersedia di beberapa titik dekat jendela, biasanya dipakai saat mengerjakan tugas.</p>
+      </div>
+
+      <div class="card">
+        <h3>Mushola Kecil</h3>
+        <p>Terletak di ujung selasar, cukup untuk salat sebelum kembali ke kelas.</p>
+      </div>
+
+      <div class="card">
+        <h3>Tempat Cuci Tangan</h3>
+        <p>Ada dua titik wastafel di dekat pintu masuk dan dekat dapur.</p>
+      </div>
+    </section>
+
+    <section id="berita-terbaru">
+      <h2>Berita Terbaru</h2>
+
+      <article class="berita-singkat">
+        <p><time datetime="2026-09-16">16 September 2026</time></p>
+        <h3>Kantin ITERA Buka Menu Baru: Paket Hemat Mahasiswa</h3>
+        <p>Kantin ITERA merilis dua paket hemat untuk sarapan dan makan siang, menjawab keluhan mahasiswa soal harga di akhir bulan.</p>
+        <p><a href="berita.html">Baca selengkapnya</a></p>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- Aside berisi info lokasi dan jam buka, diletakkan di luar main -->
+  <aside id="lokasi">
+    <h2>Lokasi dan Jam Operasional</h2>
+    <address>Selasar Gedung Kuliah Umum, Kampus ITERA, Way Huwi, Jati Agung, Lampung Selatan.</address>
+    <p>Senin - Jumat: 07.00 - 20.00</p>
+    <p>Sabtu: 08.00 - 15.00</p>
+    <p>Minggu: Tutup</p>
+  </aside>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Kantin ITERA</p>
+    <p>Tugas Pemrograman Web - Informatika ITERA</p>
+  </footer>
+
+</body>
+</html>
