@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pendaftaran Mahasiswa Baru</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800;900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="halaman">
+
+    <h1>Pendaftaran Mahasiswa Baru</h1>
+    <p class="pengantar">Isi lima data di bawah ini. Setelah dikirim, datamu ikut tertulis di alamat halaman berikutnya.</p>
+
+    <div class="lembar">
+      <!-- method GET: data dikirim lewat query string di URL -->
+      <form action="detail.html" method="GET">
+
+        <div class="isian">
+          <label for="nama">Nama lengkap</label>
+          <input type="text" id="nama" name="nama" placeholder="Dina Olivia" autocomplete="name" required>
+        </div>
+
+        <div class="baris">
+          <div class="isian">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="dina@email.com" autocomplete="email" required>
+          </div>
+
+          <div class="isian">
+            <label for="telepon">Nomor telepon</label>
+            <input type="tel" id="telepon" name="telepon" placeholder="08xxxxxxxx" autocomplete="tel">
+          </div>
+        </div>
+
+        <fieldset>
+          <legend>Jenis kelamin</legend>
+          <div class="opsi">
+            <input type="radio" id="jk-l" name="jk" value="Laki-laki" required>
+            <label for="jk-l">Laki-laki</label>
+            <input type="radio" id="jk-p" name="jk" value="Perempuan">
+            <label for="jk-p">Perempuan</label>
+          </div>
+        </fieldset>
+
+        <div class="isian">
+          <label for="jurusan">Jurusan yang dipilih</label>
+          <select id="jurusan" name="jurusan">
+            <option value="Teknik Informatika">Teknik Informatika</option>
+            <option value="Teknik Mesin">Teknik Mesin</option>
+            <option value="Teknik Elektro">Teknik Elektro</option>
+            <option value="Teknik Pertambangan">Teknik Pertambangan</option>
+          </select>
+        </div>
+
+        <div class="aksi">
+          <button type="submit" id="btn-daftar">Kirim pendaftaran</button>
+          <p class="petunjuk">Nama dan email wajib diisi.</p>
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+</body>
+</html>
